@@ -1,0 +1,1077 @@
+{
+	id: 1972,
+	filename: "act_vib_tropics",
+	order_index: 7,
+	title: "Act VIa: Tropics (SP Only)",
+	icon: "tropicraft:pina_colada",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "default",
+	images: [],
+	quests: [
+		{
+			title: "Welcome To Paradise?",
+			icon: "tropicraft:pina_colada",
+			x: 0.0d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"Ahhh paradise... Or so you thought. Welcome to the Tropics - an uncharted island found off the coast of another island. How do you get here? Easy! Simply sit on a beach chair and sip your Pina Colada at sunset!",
+				"You may need to look at the sun while you're sipping your drink!",
+				"Note: before coming to the Tropics, make sure you have set a global waystone up in the Overworld (you need to be in creative to do this). Also, be sure to bring a warpstone or scroll to teleport back. This is currently the only way to return from",
+				"the Tropics, and subsequently, why the Tropics is SP only!",
+				"To access this quest, you must complete 'Good Dream Lord' of Act V."
+			],
+			min_required_dependencies: 0,
+			dependencies: [I;486],
+			dependency_requirement: "all_completed",
+			id: 1973,
+			tasks: [{
+				id: 1974,
+				type: "dimension",
+				title: "Visit Dimension: Tropics",
+				dimension: "tropicraft:tropics"
+			}],
+			rewards: [
+				{
+					id: 1977,
+					type: "item",
+					item: {
+						id: "tropicraft:bamboo_stick",
+						Count: 4b
+					}
+				},
+				{
+					id: 1978,
+					type: "item",
+					title: "175000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 175000
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Bare Necessities",
+			x: 1.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["In the Tropics, you'll need to be careful where you tread. You never know what might be around the corner... Craft a dagger to protect you."],
+			min_required_dependencies: 0,
+			dependencies: [I;1973],
+			dependency_requirement: "all_completed",
+			id: 1975,
+			tasks: [{
+				id: 1976,
+				type: "item",
+				item: {
+					id: "tropicraft:dagger",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}],
+			rewards: [
+				{
+					id: 1979,
+					type: "item",
+					item: {
+						id: "minecraft:bucket",
+						Count: 3b
+					}
+				},
+				{
+					id: 1980,
+					type: "item",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 180000
+						}
+					}
+				},
+				{
+					id: 2565,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "weaponcrafter_crate",
+							LVL: 55,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Exploration Route",
+			x: 3.0d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Let's see what we can find for food around these islands!"],
+			min_required_dependencies: 0,
+			dependencies: [I;1975],
+			dependency_requirement: "all_completed",
+			id: 1981,
+			tasks: [
+				{
+					id: 1982,
+					type: "item",
+					item: "tropicraft:lemon"
+				},
+				{
+					id: 1983,
+					type: "item",
+					item: "tropicraft:lime"
+				},
+				{
+					id: 1985,
+					type: "item",
+					item: "tropicraft:orange"
+				}
+			],
+			rewards: [
+				{
+					id: 1987,
+					type: "item",
+					title: "185000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 185000
+						}
+					}
+				},
+				{
+					id: 2557,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "currency_crate",
+							LVL: 55,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Relaxation Route",
+			x: 3.0d,
+			y: 3.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Now that we're here, let's take a stroll along the shore... After so many days, we really deserve a rest!"],
+			min_required_dependencies: 0,
+			dependencies: [I;1975],
+			dependency_requirement: "all_completed",
+			id: 1988,
+			tasks: [{
+				id: 1991,
+				type: "item",
+				item: "tropicraft:starfish",
+				count: 6L
+			}],
+			rewards: [
+				{
+					id: 1993,
+					type: "item",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 185000
+						}
+					}
+				},
+				{
+					id: 2566,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "currency_crate",
+							LVL: 55,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Chunky",
+			icon: "tropicraft:chunk",
+			x: 4.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Around the Tropics, you will find various Eastern island heads. The material they're composed of is very strong. They might be practical..."],
+			min_required_dependencies: 0,
+			dependencies: [I;1981],
+			dependency_requirement: "all_completed",
+			id: 1994,
+			tasks: [
+				{
+					id: 1995,
+					type: "item",
+					item: "tropicraft:drink_mixer"
+				},
+				{
+					id: 1996,
+					type: "item",
+					item: "tropicraft:air_compressor"
+				}
+			],
+			rewards: [
+				{
+					id: 1997,
+					type: "item",
+					item: {
+						id: "tropicraft:zircon_gem",
+						Count: 4b
+					}
+				},
+				{
+					id: 1998,
+					type: "item",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 200000
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Gem Discovery",
+			x: 4.5d,
+			y: 3.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["In the Tropics, you will find native ores and gems hidden on the mountainside! These are used for crafting various tools, weapons, and Tropicraft-specific items!"],
+			min_required_dependencies: 0,
+			dependencies: [I;1988],
+			dependency_requirement: "all_completed",
+			id: 1999,
+			tasks: [
+				{
+					id: 2000,
+					type: "item",
+					item: "tropicraft:azurite_gem",
+					count: 4L
+				},
+				{
+					id: 2001,
+					type: "item",
+					item: "tropicraft:zircon_gem",
+					count: 6L
+				}
+			],
+			rewards: [
+				{
+					id: 2002,
+					type: "item",
+					item: {
+						id: "tropicraft:azurite_gem",
+						Count: 2b
+					}
+				},
+				{
+					id: 2003,
+					type: "item",
+					item: {
+						id: "tropicraft:zircon_gem",
+						Count: 2b
+					}
+				},
+				{
+					id: 2004,
+					type: "item",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 200000
+						}
+					}
+				},
+				{
+					id: 2567,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "jewerlycrafter_crate",
+							LVL: 55,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Danger Route",
+			x: 3.0d,
+			y: -3.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["In the Tropics, you will find variants of familiar species... Kill 1 tropicreeper, 1 tropibee, 1 tropi spider, and 1 tropiskelly."],
+			min_required_dependencies: 0,
+			dependencies: [I;1975],
+			dependency_requirement: "all_completed",
+			id: 2005,
+			tasks: [
+				{
+					id: 2006,
+					type: "kill",
+					icon: "tropicraft:tropicreeper_spawn_egg",
+					entity: "tropicraft:tropicreeper",
+					value: 1L
+				},
+				{
+					id: 2007,
+					type: "kill",
+					icon: "tropicraft:tropibee_spawn_egg",
+					entity: "tropicraft:tropibee",
+					value: 1L
+				},
+				{
+					id: 2008,
+					type: "kill",
+					icon: "tropicraft:tropi_spider_spawn_egg",
+					entity: "tropicraft:tropi_spider",
+					value: 1L
+				},
+				{
+					id: 2009,
+					type: "kill",
+					icon: "minecraft:skeleton_skull",
+					entity: "tropicraft:tropiskelly",
+					value: 1L
+				}
+			],
+			rewards: [
+				{
+					id: 2011,
+					type: "item",
+					title: "200000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 200000
+						}
+					}
+				},
+				{
+					id: 2559,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "weaponcrafter_crate",
+							LVL: 55,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "A Local Encounter",
+			x: 4.5d,
+			y: -3.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"You find out there are 2 local tribes to the Tropics! The ashen - a vicious tribe with no interest in conversation... kill them on sight! The other tribe seems to be a little more peaceful...",
+				"You'll find these guys scattered across the Tropics."
+			],
+			min_required_dependencies: 0,
+			dependencies: [I;2005],
+			dependency_requirement: "all_completed",
+			id: 2012,
+			tasks: [{
+				id: 2013,
+				type: "kill",
+				icon: "tropicraft:ashen_spawn_egg",
+				entity: "tropicraft:ashen",
+				value: 12L
+			}],
+			rewards: [
+				{
+					id: 2015,
+					type: "item",
+					title: "250000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 250000
+						}
+					}
+				},
+				{
+					id: 2564,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "weaponcrafter_crate",
+							LVL: 55,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Skin Peeling",
+			x: 6.0d,
+			y: -3.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Iguanas are a native species to the Tropics. They can drop valuable materials for crafting!"],
+			min_required_dependencies: 0,
+			dependencies: [I;2012],
+			dependency_requirement: "all_completed",
+			id: 2016,
+			tasks: [{
+				id: 2017,
+				type: "item",
+				item: "tropicraft:iguana_leather",
+				count: 12L
+			}],
+			rewards: [
+				{
+					id: 2018,
+					type: "item",
+					item: {
+						id: "tropicraft:iguana_leather",
+						Count: 4b
+					}
+				},
+				{
+					id: 2019,
+					type: "item",
+					title: "225000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 225000
+						}
+					}
+				},
+				{
+					id: 2562,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "armorcrafter_crate",
+							LVL: 55,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Tropical Crafts",
+			x: 6.0d,
+			y: 3.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["You'll find that a lot of resources in the Tropics are multi-purpose. Zircon can be upgraded into zirconium which can be used for equipment!"],
+			min_required_dependencies: 0,
+			dependencies: [I;1999],
+			dependency_requirement: "all_completed",
+			id: 2020,
+			tasks: [{
+				id: 2021,
+				type: "item",
+				item: {
+					id: "tropicraft:zirconium_sword",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}],
+			rewards: [
+				{
+					id: 2022,
+					type: "item",
+					item: {
+						id: "tropicraft:zirconium_gem",
+						Count: 8b
+					}
+				},
+				{
+					id: 2023,
+					type: "item",
+					title: "275000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 275000
+						}
+					}
+				},
+				{
+					id: 2568,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "currency_crate",
+							LVL: 55,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Improved Gear",
+			x: 7.5d,
+			y: 3.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Eudialyte is considered one of the toughest materials you can find in the Tropics."],
+			min_required_dependencies: 0,
+			dependencies: [I;2020],
+			dependency_requirement: "all_completed",
+			id: 2024,
+			tasks: [{
+				id: 2025,
+				type: "item",
+				item: {
+					id: "tropicraft:eudialyte_axe",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}],
+			rewards: [
+				{
+					id: 2055,
+					type: "item",
+					item: {
+						id: "tropicraft:eudialyte_gem",
+						Count: 8b
+					}
+				},
+				{
+					id: 2056,
+					type: "item",
+					title: "275000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 275000
+						}
+					}
+				},
+				{
+					id: 2569,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "weaponcrafter_crate",
+							LVL: 55,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Fire Resistance",
+			x: 7.5d,
+			y: -3.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Wearing full scale armor gives you a hidden fire resistance bonus! You can get scales from iguanas."],
+			min_required_dependencies: 0,
+			dependencies: [I;2016],
+			dependency_requirement: "all_completed",
+			id: 2026,
+			tasks: [
+				{
+					id: 2027,
+					type: "item",
+					item: {
+						id: "tropicraft:scale_helmet",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 2028,
+					type: "item",
+					item: {
+						id: "tropicraft:scale_chestplate",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 2029,
+					type: "item",
+					item: {
+						id: "tropicraft:scale_leggings",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 2030,
+					type: "item",
+					item: {
+						id: "tropicraft:scale_boots",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			],
+			rewards: [
+				{
+					id: 2031,
+					type: "item",
+					item: "mmorpg:lootbox/medium_gear_lootbox_4"
+				},
+				{
+					id: 2032,
+					type: "item",
+					title: "275000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 275000
+						}
+					}
+				},
+				{
+					id: 2563,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "armorcrafter_crate",
+							LVL: 55,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Scuba Expedition",
+			x: 6.0d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"At this point, you can craft scuba gear! Using iguana leather and zircon, you can make the 3 pieces of scuba gear.",
+				"Refill the air in your scuba tank using the air compressor!"
+			],
+			min_required_dependencies: 1,
+			dependencies: [I;
+				1999,
+				1994,
+				2016
+			],
+			dependency_requirement: "all_completed",
+			id: 2033,
+			tasks: [
+				{
+					id: 2034,
+					type: "item",
+					item: {
+						id: "tropicraft:yellow_scuba_goggles",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 2035,
+					type: "item",
+					item: {
+						id: "tropicraft:yellow_scuba_harness",
+						Count: 1b,
+						tag: {
+							Damage: 0,
+							scuba: {}
+						}
+					}
+				},
+				{
+					id: 2036,
+					type: "item",
+					item: {
+						id: "tropicraft:yellow_scuba_flippers",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			],
+			rewards: [
+				{
+					id: 2038,
+					type: "item",
+					title: "205000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 205000
+						}
+					}
+				},
+				{
+					id: 2558,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "armorcrafter_crate",
+							LVL: 55,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Fishing For Trouble",
+			x: 7.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["The ocean is vast and is filled with many different species of fish. You can catch some of the fish using buckets. Let's go fishing!"],
+			min_required_dependencies: 0,
+			dependencies: [I;2033],
+			dependency_requirement: "all_completed",
+			id: 2039,
+			tasks: [
+				{
+					id: 2040,
+					type: "item",
+					item: "tropicraft:tropical_fish_bucket"
+				},
+				{
+					id: 2329,
+					type: "item",
+					item: "minecraft:dead_tube_coral_block",
+					count: 4L
+				}
+			],
+			rewards: [
+				{
+					id: 2043,
+					type: "item",
+					item: {
+						id: "tropicraft:scale",
+						Count: 4b
+					}
+				},
+				{
+					id: 2044,
+					type: "item",
+					title: "200000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 200000
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Purification",
+			x: 9.0d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Rumours have it that burning redstone and lapis lazuli in a furnace purifies them... But for what purpose?"],
+			min_required_dependencies: 0,
+			dependencies: [I;2039],
+			dependency_requirement: "all_completed",
+			id: 2138,
+			tasks: [
+				{
+					id: 2139,
+					type: "item",
+					item: "gaiadimension:crystallized_lapis_lazuli",
+					count: 4L
+				},
+				{
+					id: 2140,
+					type: "item",
+					item: "gaiadimension:crystallized_redstone",
+					count: 4L
+				}
+			],
+			rewards: [
+				{
+					id: 2142,
+					type: "item",
+					title: "300000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 300000
+						}
+					}
+				},
+				{
+					id: 2570,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "currency_crate",
+							LVL: 55,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Combustion",
+			x: 10.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"By putting together redstone and lapis lazuli, you can a block with high potential energy. You sense there must be some way to unleash the energy from the blocks... If only there was some way.",
+				""
+			],
+			min_required_dependencies: 0,
+			dependencies: [I;2138],
+			dependency_requirement: "all_completed",
+			id: 2143,
+			tasks: [
+				{
+					id: 2144,
+					type: "item",
+					item: {
+						id: "gaiadimension:glint_and_gold",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 2145,
+					type: "item",
+					item: "gaiadimension:keystone_block",
+					count: 10L
+				}
+			],
+			rewards: [{
+				id: 2146,
+				type: "item",
+				title: "300000 Experience",
+				item: {
+					id: "mmorpg:give_exp",
+					Count: 1b,
+					tag: {
+						exp: 300000
+					}
+				}
+			}]
+		},
+		{
+			title: "A Secret World",
+			icon: {
+				id: "gaiadimension:gaia_champion_sword",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: 12.0d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"By putting keystone blocks in an orientation not unlike a nether portal, and activiating it with the gold and diamond, you've activated a portal! Or... at least you think it's a portal.",
+				"Enter the Gaia dimension. Something tells you this will be a difficult journey..."
+			],
+			min_required_dependencies: 0,
+			dependencies: [I;2143],
+			dependency_requirement: "all_completed",
+			id: 2147,
+			tasks: [{
+				id: 2148,
+				type: "dimension",
+				title: "Visit Dimension: Gaia",
+				dimension: "gaiadimension:gaia"
+			}],
+			rewards: [
+				{
+					id: 2149,
+					type: "item",
+					title: "300000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 300000
+						}
+					}
+				},
+				{
+					id: 2571,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "map_crate",
+							LVL: 55,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Carnivorous Plants",
+			x: 4.5d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Some plants don't take so kindly to foreign creatures... Be careful!"],
+			min_required_dependencies: 0,
+			dependencies: [I;1994],
+			dependency_requirement: "all_completed",
+			id: 2795,
+			tasks: [
+				{
+					id: 2796,
+					type: "kill",
+					icon: {
+						id: "lycanitesmobs:plantspawn",
+						Count: 1b,
+						tag: {
+							CreatureInfoSpawnEgg: {
+								creaturename: "triffid"
+							}
+						}
+					},
+					entity: "lycanitesmobs:triffid",
+					value: 4L
+				},
+				{
+					id: 2800,
+					type: "kill",
+					icon: {
+						id: "lycanitesmobs:plantspawn",
+						Count: 1b,
+						tag: {
+							CreatureInfoSpawnEgg: {
+								creaturename: "shambler"
+							}
+						}
+					},
+					entity: "lycanitesmobs:shambler",
+					value: 2L
+				}
+			],
+			rewards: [{
+				id: 2820,
+				type: "item",
+				item: {
+					id: "mmorpg:give_exp",
+					Count: 1b,
+					tag: {
+						exp: 250000
+					}
+				}
+			}]
+		}
+	]
+}

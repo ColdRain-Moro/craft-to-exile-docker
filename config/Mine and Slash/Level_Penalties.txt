@@ -1,0 +1,17 @@
+{
+  "Explanation1": "This determines the loot and exp multiplier when killing mobs.",
+  "Explanation2": "(-5,1) means if you\u0027re close to 5 lvls lower, multiply by 1, meaning do nothing.",
+  "Explanation3": "(20,0.5) means if you\u0027re close to 20 lvls higher, reduce loot by 50%,",
+  "Explanation4": "Number is picked by getting the closest number to the lvl difference",
+  "Explanation6": " Level Difference \u003d playerLVL - mobLVL",
+  "map": {
+    "-31": 0.01,
+    "-18": 0.2,
+    "-11": 0.4,
+    "0": 1.0,
+    "11": 0.4,
+    "18": 0.2,
+    "31": 0.01
+  },
+  "maxEXPDistance": 100
+}

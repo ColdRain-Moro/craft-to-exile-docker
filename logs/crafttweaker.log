@@ -1,0 +1,100 @@
+[23:16:52.239][COMMON_SETUP][SERVER][INFO] Started loading Scripts for Loader 'setupCommon'!
+[23:16:53.362][COMMON_SETUP][SERVER][INFO] Finished loading Scripts!
+[23:17:02.764][DONE][SERVER][INFO] Started loading Scripts for Loader 'crafttweaker'!
+[23:17:02.842][DONE][SERVER][INFO] Loading file: empty-cte-mc.zs
+[23:17:02.850][DONE][SERVER][INFO] Loading file: emptyjei-2.zs
+[23:17:02.853][DONE][SERVER][INFO] Loading file: emptyjei-3.zs
+[23:17:02.858][DONE][SERVER][INFO] Loading file: emptyjei-4.zs
+[23:17:02.862][DONE][SERVER][INFO] Loading file: emptyjei-5.zs
+[23:17:02.864][DONE][SERVER][INFO] Loading file: emptyjei-6.zs
+[23:17:02.867][DONE][SERVER][INFO] Loading file: emptyjei.zs
+[23:17:02.870][DONE][SERVER][INFO] Loading file: foodstuffs.zs
+[23:17:02.875][DONE][SERVER][INFO] Loading file: initialinventory.zs
+[23:17:02.875][DONE][SERVER][INFO] Loading file: potions.zs
+[23:17:02.968][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:eraser>"
+[23:17:02.978][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:motor>"
+[23:17:02.984][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:knob_wood>"
+[23:17:02.992][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:sledgehammer_gold>.withTag({Damage: 0 as int})"
+[23:17:02.999][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:knob_diamond>"
+[23:17:03.006][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:torch_placer>"
+[23:17:03.012][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:sledgehammer_starlight>.withTag({Damage: 0 as int})"
+[23:17:03.019][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:torch_belt>"
+[23:17:03.024][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:knob_stone>"
+[23:17:03.029][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:sledgehammer_diamond>.withTag({Damage: 0 as int})"
+[23:17:03.034][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:sledgehammer_wood>.withTag({Damage: 0 as int})"
+[23:17:03.039][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:knob_gold>"
+[23:17:03.043][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:knob_iron>"
+[23:17:03.048][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:sledgehammer_stone>.withTag({Damage: 0 as int})"
+[23:17:03.052][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:sledgehammer_iron>.withTag({Damage: 0 as int})"
+[23:17:03.056][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:brush>"
+[23:17:03.061][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:mob_beacon>"
+[23:17:03.065][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:pencil>"
+[23:17:03.069][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:link_book_location>"
+[23:17:03.074][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:blender>"
+[23:17:03.078][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:iron_scaffold>"
+[23:17:03.083][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:knob_starlight>"
+[23:17:03.087][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:network_gate>"
+[23:17:03.091][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:range_upgrade>"
+[23:17:03.097][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:calemiutils:speed_upgrade>"
+[23:17:03.108][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:wstweaks:blaze_blade>.withTag({Damage: 0 as int})"
+[23:17:03.111][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:wstweaks:lava_blade>.withTag({Damage: 0 as int})"
+[23:17:03.115][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:quark:pickarang>.withTag({Damage: 0 as int})"
+[23:17:03.123][DONE][SERVER][INFO] Adding: [vinegar] to tag: forge:vinegar/vinegar
+[23:17:03.123][DONE][SERVER][INFO] Adding: [vinegar] to tag: forge:vinegar
+[23:17:03.124][DONE][SERVER][INFO] Adding: [cheese_slice] to tag: forge:cheese/cheese
+[23:17:03.124][DONE][SERVER][INFO] Adding: [cheese_slice] to tag: forge:cheese
+[23:17:03.124][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:pamhc2foodcore:cheeseitem>"
+[23:17:03.128][DONE][SERVER][INFO] Registering new Item tag with name <tag:forge:rice>
+[23:17:03.128][DONE][SERVER][INFO] Registering new Item tag with name <tag:forge:riceball>
+[23:17:03.129][DONE][SERVER][INFO] Adding: [rice] to tag: forge:rice
+[23:17:03.129][DONE][SERVER][INFO] Adding: [rice_ball] to tag: forge:riceball
+[23:17:03.129][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:swampexpansion:rice_ball>"
+[23:17:03.136][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shaped", with name: "crafttweaker:swamp_rice_ball" that outputs: <item:swampexpansion:rice_ball> * 4
+[23:17:03.136][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:swampexpansion:cod_kelp_roll>"
+[23:17:03.142][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shapeless", with name: "crafttweaker:cod_kelp_roll" that outputs: <item:swampexpansion:cod_kelp_roll> * 2
+[23:17:03.143][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:swampexpansion:pufferfish_rice_cake>"
+[23:17:03.148][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shapeless", with name: "crafttweaker:pufferfish_rice_cake" that outputs: <item:swampexpansion:pufferfish_rice_cake> * 2
+[23:17:03.149][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:swampexpansion:lionfish_rice_cake>"
+[23:17:03.154][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shapeless", with name: "crafttweaker:lionfish_rice_cake" that outputs: <item:swampexpansion:lionfish_rice_cake> * 2
+[23:17:03.155][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:swampexpansion:crab_kelp_roll>"
+[23:17:03.160][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shapeless", with name: "crafttweaker:crab_kelp_roll" that outputs: <item:swampexpansion:crab_kelp_roll> * 2
+[23:17:03.161][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:swampexpansion:pike_kelp_roll>"
+[23:17:03.166][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shapeless", with name: "crafttweaker:pike_kelp_roll" that outputs: <item:swampexpansion:pike_kelp_roll> * 2
+[23:17:03.166][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:swampexpansion:tropical_fish_kelp_roll>"
+[23:17:03.172][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shapeless", with name: "crafttweaker:tropical_fish_kelp_roll" that outputs: <item:swampexpansion:tropical_fish_kelp_roll> * 2
+[23:17:03.172][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:swampexpansion:salmon_rice_cake>"
+[23:17:03.176][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shapeless", with name: "crafttweaker:salmon_rice_cake" that outputs: <item:swampexpansion:salmon_rice_cake> * 2
+[23:17:03.176][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:simplefarming:vinegar>"
+[23:17:03.179][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:simplefarming:cheese_block>"
+[23:17:03.183][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:simplefarming:pickle>"
+[23:17:03.186][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:simplefarming:pickled_beetroot>"
+[23:17:03.190][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:pamhc2foodcore:fruitpunchitem>"
+[23:17:03.193][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shapeless", with name: "crafttweaker:wheel_of_cheese" that outputs: <item:simplefarming:cheese_block>
+[23:17:03.193][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shapeless", with name: "crafttweaker:pickle" that outputs: <item:simplefarming:pickle>
+[23:17:03.194][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shapeless", with name: "crafttweaker:pickled_beetroot" that outputs: <item:simplefarming:pickled_beetroot>
+[23:17:03.194][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:pamhc2foodcore:fruitpunchitem>"
+[23:17:03.197][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shapeless", with name: "crafttweaker:fruitpunchitem" that outputs: <item:pamhc2foodcore:fruitpunchitem>
+[23:17:03.197][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:pamhc2foodcore:pumpkincheesecakeitem>"
+[23:17:03.201][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shapeless", with name: "crafttweaker:pumpkincheesecakeitem" that outputs: <item:pamhc2foodcore:pumpkincheesecakeitem>
+[23:17:03.201][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:pamhc2foodcore:basiccheeseburgeritem>"
+[23:17:03.204][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shapeless", with name: "crafttweaker:basiccheeseburgeritem" that outputs: <item:pamhc2foodcore:basiccheeseburgeritem>
+[23:17:03.204][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:pamhc2foodcore:baconcheeseburgeritem>"
+[23:17:03.207][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shapeless", with name: "crafttweaker:baconcheeseburgeritem" that outputs: <item:pamhc2foodcore:baconcheeseburgeritem>
+[23:17:03.208][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:pamhc2foodcore:macncheeseitem>"
+[23:17:03.210][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shapeless", with name: "crafttweaker:macncheeseitem" that outputs: <item:pamhc2foodcore:macncheeseitem>
+[23:17:03.211][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:pamhc2foodcore:grilledcheeseitem>"
+[23:17:03.213][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shapeless", with name: "crafttweaker:grilledcheeseitem" that outputs: <item:pamhc2foodcore:grilledcheeseitem>
+[23:17:03.214][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:pamhc2foodcore:cheesecakeitem>"
+[23:17:03.217][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shapeless", with name: "crafttweaker:cheesecakeitem" that outputs: <item:pamhc2foodcore:cheesecakeitem>
+[23:17:03.219][DONE][SERVER][INFO] Removing "minecraft:smelting" recipes with output: <item:simplefarming:cooked_egg>"
+[23:17:03.220][DONE][SERVER][INFO] Removing "minecraft:smoking" recipes with output: <item:simplefarming:cooked_egg>"
+[23:17:03.220][DONE][SERVER][INFO] Removing "minecraft:campfire_cooking" recipes with output: <item:simplefarming:cooked_egg>"
+[23:17:03.220][DONE][SERVER][INFO] Adding "minecraft:crafting" recipe, of type: "shapeless", with name: "crafttweaker:cooked_egg" that outputs: <item:simplefarming:cooked_egg>
+[23:17:03.221][DONE][SERVER][INFO] Adding starting item: <item:minecraft:wooden_sword>.withTag({Damage: 0 as int}) in slot: 0 in key: starter gear
+[23:17:03.222][DONE][SERVER][INFO] Adding starting item: <item:mmorpg:ore0> * 4 in slot: 8 in key: starter gear
+[23:17:03.222][DONE][SERVER][INFO] Adding starting item: <item:minecraft:bread> in slot: 1 in key: starter gear
+[23:17:03.222][DONE][SERVER][INFO] Adding starting item: <item:mmorpg:alchemy/instant/misc/reset_all> in slot: 4 in key: all reset 2
+[23:17:03.223][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:minecraft:tipped_arrow>.withTag({Potion: "minecraft:poison" as string})"
+[23:17:03.226][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:minecraft:tipped_arrow>.withTag({Potion: "minecraft:long_poison" as string})"
+[23:17:03.227][DONE][SERVER][INFO] Removing "minecraft:crafting" recipes with output: <item:minecraft:tipped_arrow>.withTag({Potion: "minecraft:strong_poison" as string})"
+[23:17:03.230][DONE][SERVER][INFO] Finished loading Scripts!

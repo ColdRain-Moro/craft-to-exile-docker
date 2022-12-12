@@ -1,0 +1,111 @@
+{
+  "biome_blacklist": [
+    "minecraft:the_end",
+    "minecraft:nether",
+    "minecraft:small_end_islands",
+    "minecraft:end_midlands",
+    "minecraft:end_highlands",
+    "minecraft:end_barrens",
+    "minecraft:the_void",
+    "biomesoplenty:ashen_inferno",
+    "biomesopenty:undergarden",
+    "biomesoplenty:boneyard",
+    "biomesoplenty:visceral_heap"
+  ],
+  "biome_overworld_blacklist": [
+    "minecraft:ocean",
+    "minecraft:deep_ocean",
+    "minecraft:lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:warm_ocean",
+    "minecraft:deep_warm_ocean",
+    "minecraft:cold_ocean",
+    "minecraft:deep_cold_ocean",
+    "minecraft:frozen_ocean",
+    "minecraft:deep_frozen_ocean"
+  ],
+  "bows": [
+    "minecraft:bow"
+  ],
+  "colored_armor": [],
+  "swords": [
+    "minecraft:stone_sword",
+    "minecraft:golden_sword",
+    "minecraft:iron_sword"
+  ],
+  "swords_rare": [
+    "minecraft:wooden_sword",
+    "minecraft:diamond_sword"
+  ],
+  "pickaxes": [
+    "minecraft:stone_pickaxe",
+    "minecraft:golden_pickaxe",
+    "minecraft:iron_pickaxe"
+  ],
+  "axes": [
+    "minecraft:stone_axe",
+    "minecraft:golden_axe",
+    "minecraft:iron_axe",
+    "minecraft:diamond_axe"
+  ],
+  "armor_sets_stage_1": [
+    {
+      "resourceNames": []
+    }
+  ],
+  "armor_sets_stage_2": [
+    {
+      "resourceNames": []
+    },
+    {
+      "resourceNames": []
+    },
+    {
+      "resourceNames": []
+    },
+    {
+      "resourceNames": []
+    }
+  ],
+  "armor_sets_stage_3": [
+    {
+      "resourceNames": []
+    },
+    {
+      "resourceNames": []
+    },
+    {
+      "resourceNames": []
+    },
+    {
+      "resourceNames": []
+    }
+  ],
+  "armor_rare": [
+    {
+      "resourceNames": []
+    }
+  ],
+  "bow_enchantments": [
+    "minecraft:unbreaking",
+    "minecraft:punch"
+  ],
+  "sword_enchantments": [
+    "minecraft:unbreaking",
+    "minecraft:fire_aspect",
+    "minecraft:knockback"
+  ],
+  "pickaxe_enchantments": [
+    "minecraft:efficiency"
+  ],
+  "axe_enchantments": [
+    "minecraft:efficiency"
+  ],
+  "armor_enchantments": [
+    "minecraft:unbreaking",
+    "minecraft:thorns",
+    "minecraft:fire_protection"
+  ],
+  "config_version": 0,
+  "dungeon_bosses": []
+}

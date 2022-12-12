@@ -1,0 +1,139 @@
+{
+  "name": "rahovart",
+  "creatureType": "demon",
+  "groups": [
+    "boss"
+  ],
+  "entityClass": "com.lycanitesmobs.core.entity.creature.EntityRahovart",
+  "modelClass": "com.lycanitesmobs.client.model.creature.ModelRahovart",
+  "loadDefault": false,
+  "enabled": true,
+  "spawning": {
+    "enabled": true,
+    "spawners": [],
+    "disableSubspecies": false,
+    "dimensionIds": [
+      "goodnightsleep:nightmare"
+    ],
+    "dimensionListType": "whitelist",
+    "ignoreBiome": true,
+    "biomeTags": [
+      "nether"
+    ],
+    "spawnWeight": 1,
+    "dungeonWeight": 0,
+    "spawnAreaLimit": 5,
+    "spawnGroupMin": 1,
+    "spawnGroupMax": 2,
+    "spawnsInLight": false,
+    "spawnsInDark": true,
+    "worldDayMin": -1,
+    "despawnNatural": true,
+    "despawnForced": false
+  },
+  "width": 7.0,
+  "height": 25.0,
+  "experience": 10000,
+  "health": 1000,
+  "defense": 0,
+  "armor": 0,
+  "speed": 32,
+  "damage": 2,
+  "attackSpeed": 1,
+  "rangedSpeed": 0.5,
+  "effectDuration": 5,
+  "effectAmplifier": 0,
+  "pierce": 2,
+  "sight": 64,
+  "knockbackResistance": 1,
+  "eggBackColor": "#000000",
+  "eggForeColor": "#FF0000",
+  "boss": true,
+  "subspecies": [
+    {
+      "index": 0,
+      "variants": [
+        {
+          "index": 1,
+          "name": "lux",
+          "type": "uncommon"
+        },
+        {
+          "index": 2,
+          "name": "dark",
+          "type": "uncommon"
+        }
+      ]
+    }
+  ],
+  "element": "nether",
+  "diets": [
+    "carnivore",
+    "piscivore",
+    "insectivore"
+  ],
+  "peaceful": false,
+  "summonable": false,
+  "tameable": false,
+  "mountable": false,
+  "summonCost": 2,
+  "dungeonLevel": 1,
+  "drops": [
+    {
+      "item": "minecraft:blaze_powder",
+      "minAmount": 10,
+      "maxAmount": 30,
+      "chance": 1
+    },
+    {
+      "item": "minecraft:blaze_rod",
+      "minAmount": 5,
+      "maxAmount": 15,
+      "chance": 1
+    },
+    {
+      "item": "minecraft:diamond",
+      "minAmount": 1,
+      "maxAmount": 3,
+      "chance": 1
+    },
+    {
+      "item": "minecraft:nether_star",
+      "minAmount": 1,
+      "maxAmount": 1,
+      "chance": 1
+    },
+    {
+      "item": "lycanitesmobs:demonstone",
+      "minAmount": 32,
+      "maxAmount": 64,
+      "chance": 0.25
+    },
+    {
+      "item": "lycanitesmobs:demonstonebrick",
+      "minAmount": 32,
+      "maxAmount": 64,
+      "chance": 0.25
+    },
+    {
+      "item": "lycanitesmobs:demonstonetile",
+      "minAmount": 32,
+      "maxAmount": 64,
+      "chance": 0.25
+    },
+    {
+      "item": "lycanitesmobs:demoncrystal",
+      "minAmount": 32,
+      "maxAmount": 64,
+      "chance": 0.25
+    },
+    {
+      "item": "mmorpg:lootbox/medium_currency_lootbox_3",
+      "minAmount": 1,
+      "maxAmount": 1,
+      "chance": 0.25
+    }
+  ],
+  "sizeScale": 1,
+  "hitboxScale": 2
+}

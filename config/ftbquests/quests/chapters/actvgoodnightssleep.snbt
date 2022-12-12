@@ -1,0 +1,1200 @@
+{
+	id: 343,
+	filename: "actvgoodnightssleep",
+	order_index: 6,
+	title: "Act V: Good Night's Sleep",
+	icon: "goodnightsleep:strange_bed_item",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "default",
+	images: [],
+	quests: [
+		{
+			title: "Blissful Awakening (SP Route)",
+			icon: {
+				id: "goodnightsleep:rainbow_sword",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: 0.0d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"Lucky you! You've accessed the Good Dream dimension, where you'll find unicorns and rainbows. You sense that something is wrong with the balance of positive and negative energy.",
+				"If you'd like, use positite or negatite gems to craft a luxurious or wretched bed to access the respective dimension directly. You will automagically leave the dream dimensions after 20 minutes.",
+				"Note: this route takes you to Tropicraft which is currently only available for singleplayer.",
+				"To access this quest, you must complete 'The Pharaoh' of Act IV."
+			],
+			min_required_dependencies: 0,
+			dependencies: [I;339],
+			dependency_requirement: "all_completed",
+			id: 344,
+			tasks: [{
+				id: 345,
+				type: "dimension",
+				title: "Visit Dimension: Good Dream",
+				dimension: "goodnightsleep:good_dream"
+			}],
+			rewards: [{
+				id: 1820,
+				type: "item",
+				title: "77500 Experience",
+				item: {
+					id: "mmorpg:give_exp",
+					Count: 1b,
+					tag: {
+						exp: 77500
+					}
+				}
+			}]
+		},
+		{
+			title: "Sleep Paralysis",
+			icon: {
+				id: "goodnightsleep:zitrite_sword",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: 0.0d,
+			y: 6.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"How unfortunate. You've accessed the Nightmare dimension, where you'll find demons and darkness. You sense that something is wrong with the balance of positive and negative energy.",
+				"If you'd like, use positite or negatite gems to craft a luxurious or wretched bed to access the respective dimension directly. You will automagically leave the dream dimensions after 20 minutes.",
+				"To access this quest, you must complete 'The Pharaoh' of Act IV."
+			],
+			min_required_dependencies: 0,
+			dependencies: [I;339],
+			dependency_requirement: "all_completed",
+			id: 356,
+			tasks: [{
+				id: 357,
+				type: "dimension",
+				title: "Visit Dimension: Nightmare",
+				dimension: "goodnightsleep:nightmare"
+			}],
+			rewards: [{
+				id: 1832,
+				type: "item",
+				title: "77500 Experience",
+				item: {
+					id: "mmorpg:give_exp",
+					Count: 1b,
+					tag: {
+						exp: 77500
+					}
+				}
+			}]
+		},
+		{
+			title: "Make Your Bed II",
+			x: 1.5d,
+			y: 6.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Making a wretched bed using your negatite gem will allow you to freely access the Nightmare dimension."],
+			min_required_dependencies: 0,
+			dependencies: [I;356],
+			dependency_requirement: "all_completed",
+			id: 358,
+			tasks: [{
+				id: 359,
+				type: "item",
+				item: "goodnightsleep:wretched_bed_item"
+			}],
+			rewards: [
+				{
+					id: 1833,
+					type: "item",
+					title: "100000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 100000
+						}
+					}
+				},
+				{
+					id: 2549,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "armorcrafter_crate",
+							LVL: 45,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "In A Haze",
+			x: 3.0d,
+			y: 6.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Find your bearings in this nightmare realm. Find and harvest planks native to this area to find out more about how the Nightmare dimensions works."],
+			min_required_dependencies: 0,
+			dependencies: [I;358],
+			dependency_requirement: "all_completed",
+			id: 360,
+			tasks: [
+				{
+					id: 361,
+					type: "item",
+					item: "goodnightsleep:blood_plank",
+					count: 32L
+				},
+				{
+					id: 362,
+					type: "item",
+					item: "goodnightsleep:dead_plank",
+					count: 32L
+				}
+			],
+			rewards: [
+				{
+					id: 1834,
+					type: "item",
+					title: "137500 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 137500
+						}
+					}
+				},
+				{
+					id: 2550,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "currency_crate",
+							LVL: 45,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "The Source Of The Undead",
+			x: 3.0d,
+			y: 7.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["After analysing the various wooden planks, you find out that they're imbued with undead energy. Find the source of the undead energy in the underground."],
+			min_required_dependencies: 0,
+			dependencies: [I;360],
+			dependency_requirement: "all_completed",
+			id: 363,
+			tasks: [{
+				id: 364,
+				type: "item",
+				item: "goodnightsleep:necrum",
+				count: 32L
+			}],
+			rewards: [
+				{
+					id: 1836,
+					type: "item",
+					title: "162500 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 162500
+						}
+					}
+				},
+				{
+					id: 2551,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "weaponcrafter_crate",
+							LVL: 45,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Zits Are Evil",
+			x: 4.5d,
+			y: 7.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Ever since arriving in the Nightmare realm, you notice your acne has gotten worse. Zitrite is believed to be increase 'acne-causing' radiation levels. Get rid of it!"],
+			min_required_dependencies: 0,
+			dependencies: [I;363],
+			dependency_requirement: "all_completed",
+			id: 365,
+			tasks: [{
+				id: 366,
+				type: "item",
+				item: "goodnightsleep:zitrite_ingot",
+				count: 32L
+			}],
+			rewards: [
+				{
+					id: 1837,
+					type: "item",
+					title: "212500 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 212500
+						}
+					}
+				},
+				{
+					id: 2552,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "weaponcrafter_crate",
+							LVL: 45,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Negative Karma",
+			x: 7.5d,
+			y: 7.5d,
+			shape: "rsquare",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"You sense a great disturbance in the balance of positive and negative energies. Harvest negatite gems - maybe you can do something with the negatite gems.",
+				"By holding onto Negatite gems, you might be able to learn how to access a new dimension..."
+			],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				365,
+				390
+			],
+			dependency_requirement: "all_completed",
+			id: 367,
+			tasks: [{
+				id: 368,
+				type: "item",
+				item: "goodnightsleep:negatite_gem",
+				count: 2L
+			}],
+			rewards: [
+				{
+					id: 1838,
+					type: "item",
+					title: "275000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 275000
+						}
+					}
+				},
+				{
+					id: 2090,
+					type: "item",
+					item: "calemiutils:coin_nickel"
+				},
+				{
+					id: 2556,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "map_crate",
+							LVL: 45,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Flame On!",
+			x: 4.5d,
+			y: 6.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Lobbers are a nasty type of creature that can be found in lava. They spawn in the Nightmare dimension."],
+			min_required_dependencies: 0,
+			dependencies: [I;360],
+			dependency_requirement: "all_completed",
+			id: 369,
+			tasks: [{
+				id: 370,
+				type: "kill",
+				icon: {
+					id: "lycanitesmobs:brutespawn",
+					Count: 1b,
+					tag: {
+						CreatureInfoSpawnEgg: {
+							creaturename: "lobber"
+						}
+					}
+				},
+				entity: "lycanitesmobs:lobber",
+				value: 3L
+			}],
+			rewards: [
+				{
+					id: 1835,
+					type: "item",
+					title: "200000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 200000
+						}
+					}
+				},
+				{
+					id: 2553,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "jewerlycrafter_crate",
+							LVL: 45,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Unpleasantries",
+			x: 4.5d,
+			y: 4.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Behemoth's form from the negative energy found in the Nightmare dimension. You will find them throughout the dimension in any biome."],
+			min_required_dependencies: 0,
+			dependencies: [I;369],
+			dependency_requirement: "all_completed",
+			id: 371,
+			tasks: [{
+				id: 372,
+				type: "kill",
+				icon: {
+					id: "lycanitesmobs:demonspawn",
+					Count: 1b,
+					tag: {
+						CreatureInfoSpawnEgg: {
+							creaturename: "behemoth"
+						}
+					}
+				},
+				entity: "lycanitesmobs:behemoth",
+				value: 3L
+			}],
+			rewards: [
+				{
+					id: 1830,
+					type: "item",
+					title: "250000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 250000
+						}
+					}
+				},
+				{
+					id: 2554,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "armorcrafter_crate",
+							LVL: 45,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Make Your Bed",
+			x: 1.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Making a luxurious bed using your positite gem will allow you to freely access the Good Dream dimension without worrying about having a nightmare."],
+			min_required_dependencies: 0,
+			dependencies: [I;344],
+			dependency_requirement: "all_completed",
+			id: 373,
+			tasks: [{
+				id: 374,
+				type: "item",
+				item: "goodnightsleep:luxurious_bed_item"
+			}],
+			rewards: [
+				{
+					id: 1821,
+					type: "item",
+					title: "87500 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 87500
+						}
+					}
+				},
+				{
+					id: 2540,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "weaponcrafter_crate",
+							LVL: 45,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Sweet Tooth",
+			x: 1.5d,
+			y: 1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Since we're here, let's harvest some of the natural sweet foods of the realm... Starting with lolipops! Harvest lolipops from the lolipop bushes."],
+			min_required_dependencies: 0,
+			dependencies: [I;373],
+			dependency_requirement: "all_completed",
+			id: 375,
+			tasks: [{
+				id: 376,
+				type: "item",
+				item: "goodnightsleep:lolipop",
+				count: 32L
+			}],
+			rewards: [
+				{
+					id: 1824,
+					type: "item",
+					title: "100000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 100000
+						}
+					}
+				},
+				{
+					id: 2541,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "currency_crate",
+							LVL: 45,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "In A Daze",
+			x: 3.0d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["It's very peaceful in this dream world. It's to try to find clues first. Try harvesting natural materials to analyse their components."],
+			min_required_dependencies: 0,
+			dependencies: [I;373],
+			dependency_requirement: "all_completed",
+			id: 378,
+			tasks: [
+				{
+					id: 379,
+					type: "item",
+					item: "goodnightsleep:dream_plank",
+					count: 64L
+				},
+				{
+					id: 380,
+					type: "item",
+					item: "goodnightsleep:dream_dirt",
+					count: 32L
+				},
+				{
+					id: 381,
+					type: "item",
+					item: "goodnightsleep:white_plank",
+					count: 64L
+				}
+			],
+			rewards: [
+				{
+					id: 1822,
+					type: "item",
+					title: "125000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 125000
+						}
+					}
+				},
+				{
+					id: 2543,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "jewerlycrafter_crate",
+							LVL: 45,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Unicorns...",
+			x: 4.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Perhaps killing the most pure creature will provide hints..."],
+			min_required_dependencies: 0,
+			dependencies: [I;378],
+			dependency_requirement: "all_completed",
+			id: 382,
+			tasks: [{
+				id: 383,
+				type: "kill",
+				icon: "quark:rainbow_rune",
+				entity: "goodnightsleep:unicorn",
+				value: 10L
+			}],
+			rewards: [
+				{
+					id: 1823,
+					type: "item",
+					title: "150000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 150000
+						}
+					}
+				},
+				{
+					id: 2544,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "armorcrafter_crate",
+							LVL: 45,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Candyland",
+			x: 3.0d,
+			y: 1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Sweet ore? Maybe it's connected to the nightares... Definitely. Mine some and smelt them into candy to find out... for science."],
+			min_required_dependencies: 0,
+			dependencies: [I;378],
+			dependency_requirement: "all_completed",
+			id: 384,
+			tasks: [{
+				id: 385,
+				type: "item",
+				item: "goodnightsleep:candy",
+				count: 32L
+			}],
+			rewards: [
+				{
+					id: 1825,
+					type: "item",
+					title: "137500 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 137500
+						}
+					}
+				},
+				{
+					id: 2545,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "weaponcrafter_crate",
+							LVL: 45,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Staying Positive",
+			x: 7.5d,
+			y: 1.5d,
+			shape: "rsquare",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"Positite gems radiate with positive energy. Perhaps collecting a few of these will help us understand how to restore balance.",
+				"By holding onto Positite gems, you might be able to learn how to access a new dimension..."
+			],
+			min_required_dependencies: 0,
+			dependencies: [I;388],
+			dependency_requirement: "all_completed",
+			id: 386,
+			tasks: [{
+				id: 387,
+				type: "item",
+				item: "goodnightsleep:positite_gem",
+				count: 16L
+			}],
+			rewards: [
+				{
+					id: 1827,
+					type: "item",
+					title: "225000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 225000
+						}
+					}
+				},
+				{
+					id: 2089,
+					type: "item",
+					item: "calemiutils:coin_nickel"
+				},
+				{
+					id: 2547,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "map_crate",
+							LVL: 45,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "... And Rainbows!",
+			x: 4.5d,
+			y: 1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["This multi-coloured ore has red in it! It has red in it! Must be evil."],
+			min_required_dependencies: 0,
+			dependencies: [I;384],
+			dependency_requirement: "all_completed",
+			id: 388,
+			tasks: [{
+				id: 389,
+				type: "item",
+				item: "goodnightsleep:rainbow_ingot",
+				count: 32L
+			}],
+			rewards: [
+				{
+					id: 1826,
+					type: "item",
+					title: "162500 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 162500
+						}
+					}
+				},
+				{
+					id: 2546,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "weaponcrafter_crate",
+							LVL: 45,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Bloody Dreams",
+			x: 6.0d,
+			y: 6.0d,
+			shape: "circle",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Collect Blood Wood to be surveyed back in the Overworld. You can also use the wood to construct a bloody bed!"],
+			min_required_dependencies: 0,
+			dependencies: [I;371],
+			dependency_requirement: "all_completed",
+			id: 390,
+			tasks: [
+				{
+					id: 2828,
+					type: "item",
+					item: "goodnightsleep:blood_log",
+					count: 4L
+				},
+				{
+					id: 2829,
+					type: "item",
+					item: "minecraft:red_bed"
+				}
+			],
+			rewards: [
+				{
+					id: 1831,
+					type: "item",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 250000
+						}
+					}
+				},
+				{
+					id: 2555,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "currency_crate",
+							LVL: 45,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Seeds To Happiness",
+			x: 1.5d,
+			y: 3.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Harvest some rainbow seeds by breaking the grass. You can plant these seeds to harvest rainbow berries!"],
+			min_required_dependencies: 0,
+			dependencies: [I;375],
+			dependency_requirement: "all_completed",
+			id: 502,
+			tasks: [{
+				id: 503,
+				type: "item",
+				item: "goodnightsleep:rainbow_seeds",
+				count: 32L
+			}],
+			rewards: [{
+				id: 1828,
+				type: "item",
+				title: "112500 Experience",
+				item: {
+					id: "mmorpg:give_exp",
+					Count: 1b,
+					tag: {
+						exp: 112500
+					}
+				}
+			}]
+		},
+		{
+			title: "The Full Arch",
+			x: 1.5d,
+			y: 4.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Rainbow berries are delicious, filling, and pretty to look at. That's really it though!"],
+			min_required_dependencies: 0,
+			dependencies: [I;502],
+			dependency_requirement: "all_completed",
+			id: 504,
+			tasks: [{
+				id: 505,
+				type: "item",
+				item: "goodnightsleep:rainbow_berries",
+				count: 64L
+			}],
+			rewards: [
+				{
+					id: 1829,
+					type: "item",
+					title: "125000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 125000
+						}
+					}
+				},
+				{
+					id: 2542,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "map_crate",
+							LVL: 45,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Good Dream Lord (Lv. 45)",
+			x: 9.0d,
+			y: 1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"Perform the ritual to summon Asmodeus by constructing the Asmodeus altar. Refer to the Wiki for the schematic!",
+				"You can only summon Asmodeus in the Good Dream Dimension."
+			],
+			min_required_dependencies: 1,
+			dependencies: [I;386],
+			dependency_requirement: "all_completed",
+			id: 486,
+			tasks: [{
+				id: 487,
+				type: "kill",
+				icon: {
+					id: "lycanitesmobs:aberrationspawn",
+					Count: 1b,
+					tag: {
+						CreatureInfoSpawnEgg: {
+							creaturename: "asmodeus"
+						}
+					}
+				},
+				entity: "lycanitesmobs:asmodeus",
+				value: 1L
+			}],
+			rewards: [
+				{
+					id: 1786,
+					type: "item",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 250000
+						}
+					}
+				},
+				{
+					id: 2111,
+					type: "item",
+					item: "calemiutils:coin_dollar"
+				},
+				{
+					id: 2510,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "currency_crate",
+							LVL: 45,
+							SCORE: "GOOD",
+							TIER: 2
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Beastiary VII",
+			icon: "minecraft:writable_book",
+			x: 1.5d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"Find and kill Epions in this dimension.",
+				"If you're unable to find any, you can try to summon some using a Lycanites Summon Staff. Summon the correct primal elementals to combine into this creature!"
+			],
+			min_required_dependencies: 0,
+			dependencies: [I;378],
+			dependency_requirement: "all_completed",
+			id: 2801,
+			tasks: [{
+				id: 2802,
+				type: "kill",
+				icon: {
+					id: "lycanitesmobs:beastspawn",
+					Count: 1b,
+					tag: {
+						CreatureInfoSpawnEgg: {
+							creaturename: "epion"
+						}
+					}
+				},
+				entity: "lycanitesmobs:epion",
+				value: 4L
+			}],
+			rewards: [{
+				id: 2811,
+				type: "item",
+				item: {
+					id: "mmorpg:give_exp",
+					Count: 1b,
+					tag: {
+						exp: 150000
+					}
+				}
+			}]
+		},
+		{
+			title: "Beastiary VIII",
+			icon: "minecraft:writable_book",
+			x: 3.0d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"Find and kill Sylphs in this dimension.",
+				"If you're unable to find any, you can try to summon some using a Lycanites Summon Staff. Summon the correct primal elementals to combine into this creature!"
+			],
+			min_required_dependencies: 0,
+			dependencies: [I;378],
+			dependency_requirement: "all_completed",
+			id: 2803,
+			tasks: [{
+				id: 2804,
+				type: "kill",
+				icon: {
+					id: "lycanitesmobs:elementalspawn",
+					Count: 1b,
+					tag: {
+						CreatureInfoSpawnEgg: {
+							creaturename: "sylph"
+						}
+					}
+				},
+				entity: "lycanitesmobs:sylph",
+				value: 4L
+			}],
+			rewards: [{
+				id: 2812,
+				type: "item",
+				item: {
+					id: "mmorpg:give_exp",
+					Count: 1b,
+					tag: {
+						exp: 150000
+					}
+				}
+			}]
+		},
+		{
+			title: "Beastiary IX",
+			icon: "minecraft:writable_book",
+			x: 4.5d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"Find and kill Vapula in this dimension.",
+				"If you're unable to find any, you can try to summon some using a Lycanites Summon Staff. Summon the correct primal elementals to combine into this creature!"
+			],
+			min_required_dependencies: 0,
+			dependencies: [I;378],
+			dependency_requirement: "all_completed",
+			id: 2805,
+			tasks: [{
+				id: 2806,
+				type: "kill",
+				icon: {
+					id: "lycanitesmobs:elementalspawn",
+					Count: 1b,
+					tag: {
+						CreatureInfoSpawnEgg: {
+							creaturename: "vapula"
+						}
+					}
+				},
+				entity: "lycanitesmobs:vapula",
+				value: 4L
+			}],
+			rewards: [{
+				id: 2813,
+				type: "item",
+				item: {
+					id: "mmorpg:give_exp",
+					Count: 1b,
+					tag: {
+						exp: 150000
+					}
+				}
+			}]
+		},
+		{
+			title: "Nightmare Lord (Lv. 45)",
+			x: 9.0d,
+			y: 7.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"Perform the ritual to summon Rahovart by constructing the Rahovart altar. Refer to the Wiki for the schematic!",
+				"You can only summon Rahovart in the Nightmare Dimension."
+			],
+			min_required_dependencies: 0,
+			dependencies: [I;367],
+			dependency_requirement: "all_completed",
+			id: 2814,
+			tasks: [{
+				id: 2815,
+				type: "kill",
+				icon: {
+					id: "lycanitesmobs:demonspawn",
+					Count: 1b,
+					tag: {
+						CreatureInfoSpawnEgg: {
+							creaturename: "rahovart"
+						}
+					}
+				},
+				entity: "lycanitesmobs:rahovart",
+				value: 1L
+			}],
+			rewards: [
+				{
+					id: 2816,
+					type: "item",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 300000
+						}
+					}
+				},
+				{
+					id: 2817,
+					type: "item",
+					item: "calemiutils:coin_dollar"
+				},
+				{
+					id: 2818,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "currency_crate",
+							LVL: 45,
+							SCORE: "GOOD",
+							TIER: 2
+						}
+					}
+				}
+			]
+		}
+	]
+}

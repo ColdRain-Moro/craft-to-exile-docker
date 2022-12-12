@@ -1,0 +1,1074 @@
+{
+	id: 84,
+	filename: "actiiitheend",
+	order_index: 4,
+	title: "Act III: The End",
+	icon: "minecraft:end_stone",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "default",
+	images: [],
+	quests: [
+		{
+			title: "End Of An Era",
+			icon: "minecraft:end_stone",
+			x: 0.0d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"You made it! You're at The End! Woo- *GRUMBLE GRUMBLE* what the?! Is that a dragon I hear?",
+				"To access this quest, you must complete 'The End' of Act II."
+			],
+			min_required_dependencies: 0,
+			dependencies: [I;225],
+			dependency_requirement: "all_completed",
+			id: 244,
+			tasks: [{
+				id: 246,
+				type: "dimension",
+				title: "Visit Dimension: The End",
+				dimension: "minecraft:the_end"
+			}],
+			rewards: [{
+				id: 1787,
+				type: "item",
+				title: "62500 Experience",
+				item: {
+					id: "mmorpg:give_exp",
+					Count: 1b,
+					tag: {
+						exp: 62500
+					}
+				}
+			}]
+		},
+		{
+			title: "The Ender Dragon",
+			icon: "minecraft:dragon_head",
+			x: 1.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Kill the Ender Dragon! Be warned, the dragon is IMMUNE TO SPELL DAMAGE! This is due to how the dragon is coded, unfortunately."],
+			min_required_dependencies: 0,
+			dependencies: [I;244],
+			dependency_requirement: "all_completed",
+			id: 288,
+			tasks: [{
+				id: 289,
+				type: "kill",
+				icon: "minecraft:dragon_head",
+				entity: "minecraft:ender_dragon",
+				value: 1L
+			}],
+			rewards: [
+				{
+					id: 740,
+					type: "item",
+					item: "mmorpg:alchemy/instant/misc/reset_stats"
+				},
+				{
+					id: 741,
+					type: "item",
+					item: "mmorpg:alchemy/instant/misc/reset_spells"
+				},
+				{
+					id: 742,
+					type: "item",
+					item: "mmorpg:alchemy/instant/misc/reset_talents"
+				},
+				{
+					id: 1788,
+					type: "item",
+					title: "250000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 250000
+						}
+					}
+				},
+				{
+					id: 2113,
+					type: "item",
+					item: "quark:dragon_scale"
+				},
+				{
+					id: 2519,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "currency_crate",
+							LVL: 30,
+							SCORE: "GOOD",
+							TIER: 4
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "End Remnants",
+			x: 3.0d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["With the Ender Dragon gone, you should revisit The End and explore the islands that are left. Maybe you'll find a special chest or something along the way..."],
+			min_required_dependencies: 0,
+			dependencies: [I;288],
+			dependency_requirement: "all_completed",
+			id: 290,
+			tasks: [{
+				id: 291,
+				type: "item",
+				item: "minecraft:shulker_shell",
+				count: 2L
+			}],
+			rewards: [
+				{
+					id: 744,
+					type: "item",
+					item: {
+						id: "mmorpg:ore3",
+						Count: 10b
+					}
+				},
+				{
+					id: 1789,
+					type: "item",
+					title: "67500 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 67500
+						}
+					}
+				},
+				{
+					id: 2523,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "armorcrafter_crate",
+							LVL: 25,
+							SCORE: "GOOD",
+							TIER: 2
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Back To The Nether",
+			x: 4.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"After returning to the village, you heard rumours about villagers constantly having nightmares. According to a bar keeper, villagers have resorted to consuming mushrooms which seemed to have a 50% success rate at deterring the nightmares.",
+				"Find the mushrooms in the Nether or Overworld and see what you can do about the nightmares."
+			],
+			min_required_dependencies: 0,
+			dependencies: [I;290],
+			dependency_requirement: "all_completed",
+			id: 292,
+			tasks: [
+				{
+					id: 293,
+					type: "item",
+					item: "goodnightsleep:hope_mushroom"
+				},
+				{
+					id: 294,
+					type: "item",
+					item: "goodnightsleep:despair_mushroom"
+				}
+			],
+			rewards: [
+				{
+					id: 746,
+					type: "item",
+					item: "minecraft:red_bed"
+				},
+				{
+					id: 1790,
+					type: "item",
+					title: "71250 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 71250
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Pharaoh-cious",
+			x: 6.0d,
+			y: 0.0d,
+			shape: "rsquare",
+			subtitle: "",
+			size: 1.0d,
+			description: ["You hear sleepless whispers of the undead rising - fear pierces every village in the Overworld. It seems like it's time to take a trip to Atum - the desert of the dead."],
+			min_required_dependencies: 0,
+			dependencies: [I;292],
+			dependency_requirement: "all_completed",
+			id: 295,
+			tasks: [{
+				id: 296,
+				type: "item",
+				item: "atum:scarab"
+			}],
+			rewards: [
+				{
+					id: 1791,
+					type: "item",
+					title: "75000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 75000
+						}
+					}
+				},
+				{
+					id: 2092,
+					type: "item",
+					item: "calemiutils:coin_nickel"
+				}
+			]
+		},
+		{
+			title: "Mapping Device",
+			x: 1.5d,
+			y: 1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"Maps are instanced dungeons that provide players with plenty of experience and loot! Maps can be of different rarity and tiers. Rarity determines the number of affixes a map rolls, and higher tiers increase mob strength and loot!",
+				"The mapping device opens portals to a dungeon realm. In this realm, you are unable to place or break blocks... So tread carefully. Always bring teleportation scrolls with you in case you get stuck!",
+				"To use the mapping device, place it in an flat and open space. Fill it up with ores (fuel), then take the map in your hand and use it on the mapping device. Good luck!"
+			],
+			min_required_dependencies: 0,
+			dependencies: [I;288],
+			dependency_requirement: "all_completed",
+			id: 297,
+			tasks: [{
+				id: 298,
+				type: "item",
+				item: "mmorpg:map_device"
+			}],
+			rewards: [
+				{
+					id: 1792,
+					type: "item",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 25000
+						}
+					}
+				},
+				{
+					id: 2520,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "map_crate",
+							LVL: 30,
+							SCORE: "AMAZING",
+							TIER: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "On The Hunt",
+			icon: "minecraft:ender_pearl",
+			x: 3.0d,
+			y: 1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["The Endermen are hindering your ability to safely traverse The End. Clear out the remaining Endermen in The End."],
+			min_required_dependencies: 0,
+			dependencies: [I;290],
+			dependency_requirement: "all_completed",
+			id: 299,
+			tasks: [{
+				id: 300,
+				type: "kill",
+				icon: "minecraft:ender_pearl",
+				entity: "minecraft:enderman",
+				value: 10L
+			}],
+			rewards: [
+				{
+					id: 1793,
+					type: "item",
+					title: "33750 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 33750
+						}
+					}
+				},
+				{
+					id: 2524,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "weaponcrafter_crate",
+							LVL: 25,
+							SCORE: "GOOD",
+							TIER: 2
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Phone Home",
+			x: 1.5d,
+			y: 3.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Teleporting back from maps using the portal can be a little glitchy. Use teleport scrolls to guarantee a safe and precise return."],
+			min_required_dependencies: 0,
+			dependencies: [I;297],
+			dependency_requirement: "all_completed",
+			id: 301,
+			tasks: [{
+				id: 302,
+				type: "item",
+				item: "mmorpg:teleport_scroll",
+				count: 4L
+			}],
+			rewards: [
+				{
+					id: 757,
+					type: "item",
+					item: {
+						id: "mmorpg:teleport_scroll",
+						Count: 4b
+					}
+				},
+				{
+					id: 1796,
+					type: "item",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 52500
+						}
+					}
+				},
+				{
+					id: 2521,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "map_crate",
+							LVL: 30,
+							SCORE: "AMAZING",
+							TIER: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Mining Dimension",
+			x: 0.0d,
+			y: 6.0d,
+			shape: "gear",
+			subtitle: "",
+			size: 1.0d,
+			description: ["The Mining Dimension is an endless cave that can be accessed by crafting a teleporter (see JEI). It's recommended that you're at least level 30 before entering the Mining Dimension."],
+			min_required_dependencies: 0,
+			dependencies: [I;244],
+			dependency_requirement: "all_completed",
+			id: 303,
+			tasks: [{
+				id: 304,
+				type: "item",
+				item: "mining_dimension:teleporter"
+			}],
+			rewards: [
+				{
+					id: 763,
+					type: "item",
+					item: {
+						id: "minecraft:iron_pickaxe",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1799,
+					type: "item",
+					title: "25000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 25000
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Finding The Right Ores",
+			x: 1.5d,
+			y: 6.0d,
+			shape: "gear",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Immersive Engineering ores can only be found in the mining dimension. Go spelunking and stock up while you're there!"],
+			min_required_dependencies: 0,
+			dependencies: [I;303],
+			dependency_requirement: "all_completed",
+			id: 305,
+			tasks: [
+				{
+					id: 306,
+					type: "item",
+					item: "immersiveengineering:ore_lead"
+				},
+				{
+					id: 307,
+					type: "item",
+					item: "immersiveengineering:ore_nickel"
+				},
+				{
+					id: 308,
+					type: "item",
+					item: "immersiveengineering:ore_aluminum"
+				}
+			],
+			rewards: [
+				{
+					id: 765,
+					type: "item",
+					item: {
+						id: "mmorpg:ore3",
+						Count: 16b
+					}
+				},
+				{
+					id: 1800,
+					type: "item",
+					title: "30000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 30000
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Squashing Bugs II",
+			icon: {
+				id: "lycanitesmobs:aberrationspawn",
+				Count: 1b,
+				tag: {
+					CreatureInfoSpawnEgg: {
+						creaturename: "trite"
+					}
+				}
+			},
+			x: 4.5d,
+			y: 1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["It seems that The End and the Nether have some sort of connection. However, these trites seem to have undergone some sort of void transformation."],
+			min_required_dependencies: 0,
+			dependencies: [I;299],
+			dependency_requirement: "all_completed",
+			id: 309,
+			tasks: [{
+				id: 310,
+				type: "kill",
+				icon: {
+					id: "lycanitesmobs:aberrationspawn",
+					Count: 1b,
+					tag: {
+						CreatureInfoSpawnEgg: {
+							creaturename: "trite"
+						}
+					}
+				},
+				entity: "lycanitesmobs:trite",
+				value: 16L
+			}],
+			rewards: [
+				{
+					id: 1794,
+					type: "item",
+					title: "37500 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 37500
+						}
+					}
+				},
+				{
+					id: 2526,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "weaponcrafter_crate",
+							LVL: 25,
+							SCORE: "GOOD",
+							TIER: 2
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "What Are These Anyway?",
+			icon: "lycanitesmobs:geistliver",
+			x: 6.0d,
+			y: 1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["These morbid undead beings feed on dead energy. Due to the unstable energy they possess, they explode upon death. Be careful!"],
+			min_required_dependencies: 0,
+			dependencies: [I;309],
+			dependency_requirement: "all_completed",
+			id: 311,
+			tasks: [{
+				id: 312,
+				type: "kill",
+				icon: "lycanitesmobs:geistliver",
+				entity: "lycanitesmobs:geist",
+				value: 6L
+			}],
+			rewards: [
+				{
+					id: 1795,
+					type: "item",
+					title: "38750 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 38750
+						}
+					}
+				},
+				{
+					id: 2525,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "weaponcrafter_crate",
+							LVL: 25,
+							SCORE: "GOOD",
+							TIER: 2
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Firing That Lazer",
+			icon: "lycanitesmobs:arcanelaserstormcharge",
+			x: 4.5d,
+			y: 3.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Kill these creatures in The End to prevent some from leaving the void and into the Overworld."],
+			min_required_dependencies: 0,
+			dependencies: [I;309],
+			dependency_requirement: "all_completed",
+			id: 313,
+			tasks: [{
+				id: 314,
+				type: "kill",
+				icon: {
+					id: "lycanitesmobs:aberrationspawn",
+					Count: 1b,
+					tag: {
+						CreatureInfoSpawnEgg: {
+							creaturename: "astaroth"
+						}
+					}
+				},
+				entity: "lycanitesmobs:astaroth",
+				value: 3L
+			}],
+			rewards: [
+				{
+					id: 1797,
+					type: "item",
+					title: "50000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 50000
+						}
+					}
+				},
+				{
+					id: 2527,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "jewerlycrafter_crate",
+							LVL: 25,
+							SCORE: "GOOD",
+							TIER: 2
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "And The Brain II",
+			icon: "lycanitesmobs:cooked_pinky_meat",
+			x: 6.0d,
+			y: 3.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Kill these creatures in The End to prevent some from leaving the void and into the Overworld."],
+			min_required_dependencies: 0,
+			dependencies: [I;309],
+			dependency_requirement: "all_completed",
+			id: 315,
+			tasks: [{
+				id: 316,
+				type: "kill",
+				icon: "lycanitesmobs:cooked_pinky_meat",
+				entity: "lycanitesmobs:pinky",
+				value: 5L
+			}],
+			rewards: [
+				{
+					id: 1798,
+					type: "item",
+					title: "35000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 35000
+						}
+					}
+				},
+				{
+					id: 2528,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "map_crate",
+							LVL: 30,
+							SCORE: "AMAZING",
+							TIER: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Cave Lighter",
+			x: 3.0d,
+			y: 6.0d,
+			shape: "gear",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Craft the mining helmet to see in the dark without torches!"],
+			min_required_dependencies: 0,
+			dependencies: [I;305],
+			dependency_requirement: "all_completed",
+			id: 1701,
+			tasks: [{
+				id: 1702,
+				type: "item",
+				item: {
+					id: "mining_helmet:mining_helmet",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}],
+			rewards: [
+				{
+					id: 1801,
+					type: "item",
+					title: "20000 Experience",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 20000
+						}
+					}
+				},
+				{
+					id: 2112,
+					type: "item",
+					item: "calemiutils:coin_nickel"
+				},
+				{
+					id: 2522,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "armorcrafter_crate",
+							LVL: 25,
+							SCORE: "GOOD",
+							TIER: 2
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "The Dragon's Nest",
+			icon: "productivebees:dragon_egg_hive",
+			x: 3.0d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Draconic Bees are unique bees from Productive Bees which require an active dragon egg. Activate the egg by pouring dragon's breath onto it."],
+			min_required_dependencies: 0,
+			dependencies: [I;290],
+			dependency_requirement: "all_completed",
+			id: 2455,
+			tasks: [{
+				id: 2456,
+				type: "item",
+				item: "productivebees:obsidian_nest"
+			}],
+			rewards: [{
+				id: 2457,
+				type: "item",
+				item: "productivebees:inactive_dragon_egg"
+			}]
+		},
+		{
+			title: "Having Trouble, Melee Edition",
+			x: -1.5d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["Arachnon Hammers are a great starting weapon. They have fantasic mining capabilities, and have a 15% chance to roll as a powerful unique!"],
+			min_required_dependencies: 0,
+			dependencies: [I;244],
+			dependency_requirement: "all_completed",
+			id: 2778,
+			tasks: [{
+				id: 2779,
+				type: "item",
+				item: {
+					id: "pandoras_creatures:arachnon_hammer",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}],
+			rewards: [
+				{
+					id: 2784,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "strength_req_crate",
+							LVL: 30,
+							SCORE: "GOOD",
+							TIER: 5
+						}
+					}
+				},
+				{
+					id: 2789,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "rune_crate",
+							LVL: 30,
+							SCORE: "GOOD",
+							TIER: 5
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Having Trouble, Ranged Edition",
+			x: 0.0d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["The Neptunium Bow requires some work to get, but has a 20% chance of rolling as a Silverbranch unique!"],
+			min_required_dependencies: 0,
+			dependencies: [I;244],
+			dependency_requirement: "all_completed",
+			id: 2780,
+			tasks: [{
+				id: 2781,
+				type: "item",
+				item: {
+					id: "aquaculture:neptunium_bow",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}],
+			rewards: [
+				{
+					id: 2785,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "dexterity_req_crate",
+							LVL: 30,
+							SCORE: "GOOD",
+							TIER: 5
+						}
+					}
+				},
+				{
+					id: 2788,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "rune_crate",
+							LVL: 30,
+							SCORE: "GOOD",
+							TIER: 5
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Having Trouble, Spells Edition",
+			x: 1.5d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["The Spire of Lazarus has a 30% chance of rolling as a powerful unique for spell casters!"],
+			min_required_dependencies: 0,
+			dependencies: [I;244],
+			dependency_requirement: "all_completed",
+			id: 2782,
+			tasks: [{
+				id: 2783,
+				type: "item",
+				item: {
+					id: "ctecu:spire_of_lazarus",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}],
+			rewards: [
+				{
+					id: 2786,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "intelligence_req_crate",
+							LVL: 30,
+							SCORE: "GOOD",
+							TIER: 5
+						}
+					}
+				},
+				{
+					id: 2787,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "rune_crate",
+							LVL: 30,
+							SCORE: "GOOD",
+							TIER: 5
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Improved Identification Techniques",
+			x: 3.0d,
+			y: 3.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"This tome is capable of identifying your entire inventory at once. Craft it using scrolls, leather, and an epic ore!",
+				"",
+				'"Say no to carpal tunnel!"'
+			],
+			min_required_dependencies: 0,
+			dependencies: [I;297],
+			dependency_requirement: "all_completed",
+			id: 2790,
+			tasks: [{
+				id: 2791,
+				type: "item",
+				item: "mmorpg:identify_tome_plus",
+				count: 3L
+			}],
+			rewards: [
+				{
+					id: 2793,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "unique_crate",
+							LVL: 35,
+							SCORE: "GOOD",
+							TIER: 3
+						}
+					}
+				},
+				{
+					id: 2794,
+					type: "item",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 50000
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Team Dungeons",
+			x: 1.5d,
+			y: 4.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [
+				"Orbs of Companionship are currencies that can be applied to any maps. Doing so will increase the difficulty of the map substantially, but greatly improve loot and experience rewards.",
+				"Be sure to tackle these dungeons in a party! You wouldn't want to try these alone.",
+				"",
+				"Ideally, you should have someone who can absorb a lot of damage, someone who can deal a lot of damage, and possibly some sort of support."
+			],
+			min_required_dependencies: 0,
+			dependencies: [I;301],
+			dependency_requirement: "all_completed",
+			id: 2823,
+			tasks: [{
+				id: 2824,
+				type: "item",
+				item: "mmorpg:currency/team_map"
+			}],
+			rewards: [
+				{
+					id: 2825,
+					type: "item",
+					item: {
+						id: "mmorpg:currency/team_map",
+						Count: 8b
+					}
+				},
+				{
+					id: 2826,
+					type: "item",
+					item: {
+						id: "mmorpg:loot_crate",
+						Count: 1b,
+						tag: {
+							REGISTRY_ID: "map_crate",
+							LVL: 30,
+							SCORE: "AMAZING",
+							TIER: 0
+						}
+					}
+				},
+				{
+					id: 2827,
+					type: "item",
+					item: {
+						id: "mmorpg:give_exp",
+						Count: 1b,
+						tag: {
+							exp: 55000
+						}
+					}
+				}
+			]
+		}
+	]
+}

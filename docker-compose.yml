@@ -1,0 +1,19 @@
+version: '3'
+services:
+  game:
+    image: arcticrain/craft-to-exile
+    volumes:
+      - './mods:/game/mods'
+      - './config:/game/config'
+      - './whitelist.json:/game/whitelist.json'
+      - './server.properties:/game/server.properties'
+      - './ops.json:/game/ops.json'
+      - './banned-ips.json:/game/banned-ips.json'
+      - './banned-players.json:/game/banned-players.json'
+      - './usercache.json:/game/usercache.json'
+      - './logs:/game/logs'
+      - './ma-chat:/game/ma-chat'
+      - './world:/game/world'
+      - './world_nether:/game/world_nether'
+      - './world_the_end:/game/world_the_end'
+      - './crash-reports:/game/crash-reports'

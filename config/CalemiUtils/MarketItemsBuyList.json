@@ -1,0 +1,37 @@
+{
+  "positite": {
+    "index": 0,
+    "stackStr": "goodnightsleep:positite_gem",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 50
+  },
+  "negatite": {
+    "index": 1,
+    "stackStr": "goodnightsleep:negatite_gem",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 500
+  },
+  "big_gear_lootbox_3": {
+    "index": 2,
+    "stackStr": "mmorpg:lootbox/big_gear_lootbox_3",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 625
+  },
+  "big_gear_lootbox_4": {
+    "index": 3,
+    "stackStr": "mmorpg:lootbox/big_gear_lootbox_4",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 2500
+  },
+  "big_currency_lootbox_4": {
+    "index": 4,
+    "stackStr": "mmorpg:lootbox/big_currency_lootbox_4",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 2500
+  }
+}

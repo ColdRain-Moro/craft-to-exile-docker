@@ -1,0 +1,286 @@
+{
+  "version": "1.0",
+  "ConfigType": "dimensions_config",
+  "defaultconfig": {
+    "USE_SPECIFIC_LVL_1_POSITION": false,
+    "SPECIFIC_LVL_1_POSITION": {
+      "x": 0,
+      "z": 0,
+      "y": 0
+    },
+    "MOB_LEVEL_PER_DISTANCE": 100,
+    "MOB_LEVEL_ONE_AREA": 100,
+    "MAXIMUM_MOB_LEVEL": 120,
+    "MINIMUM_MOB_LEVEL": 1,
+    "LEVEL_FOR_MOBS_TO_BE_LEGENDARY": 20,
+    "SCALE_MOB_LEVEL_TO_NEAREST_PLAYER": true,
+    "DROPS_UNIQUE_ITEMS": true,
+    "MAP_TIER": 0,
+    "DROP_MULTIPLIER": 1.0,
+    "MOB_STRENGTH_MULTIPLIER": 1.0,
+    "MOB_HP_MULTIPLIER": 1.0,
+    "MOB_EXP_MULTIPLIER": 1.0
+  },
+  "dimensionsList": {
+    "minecraft:overworld": {
+      "USE_SPECIFIC_LVL_1_POSITION": false,
+      "SPECIFIC_LVL_1_POSITION": {
+        "x": 0,
+        "z": 0,
+        "y": 0
+      },
+      "MOB_LEVEL_PER_DISTANCE": 300,
+      "MOB_LEVEL_ONE_AREA": 350,
+      "MAXIMUM_MOB_LEVEL": 30,
+      "MINIMUM_MOB_LEVEL": 1,
+      "LEVEL_FOR_MOBS_TO_BE_LEGENDARY": 20,
+      "SCALE_MOB_LEVEL_TO_NEAREST_PLAYER": false,
+      "DROPS_UNIQUE_ITEMS": true,
+      "MAP_TIER": 0,
+      "DROP_MULTIPLIER": 1.0,
+      "MOB_STRENGTH_MULTIPLIER": 1.0,
+      "MOB_HP_MULTIPLIER": 1.0,
+      "MOB_EXP_MULTIPLIER": 1.0
+    },
+    "overworldmirror:dimension": {
+      "USE_SPECIFIC_LVL_1_POSITION": false,
+      "SPECIFIC_LVL_1_POSITION": {
+        "x": 0,
+        "z": 0,
+        "y": 0
+      },
+      "MOB_LEVEL_PER_DISTANCE": 300,
+      "MOB_LEVEL_ONE_AREA": 350,
+      "MAXIMUM_MOB_LEVEL": 30,
+      "MINIMUM_MOB_LEVEL": 1,
+      "LEVEL_FOR_MOBS_TO_BE_LEGENDARY": 20,
+      "SCALE_MOB_LEVEL_TO_NEAREST_PLAYER": false,
+      "DROPS_UNIQUE_ITEMS": true,
+      "MAP_TIER": 0,
+      "DROP_MULTIPLIER": 1.0,
+      "MOB_STRENGTH_MULTIPLIER": 1.0,
+      "MOB_HP_MULTIPLIER": 1.0,
+      "MOB_EXP_MULTIPLIER": 1.0
+    },
+    "the_bumblezone:bumblezone": {
+      "USE_SPECIFIC_LVL_1_POSITION": false,
+      "SPECIFIC_LVL_1_POSITION": {
+        "x": 0,
+        "z": 0,
+        "y": 0
+      },
+      "MOB_LEVEL_PER_DISTANCE": 100,
+      "MOB_LEVEL_ONE_AREA": 50,
+      "MAXIMUM_MOB_LEVEL": 18,
+      "MINIMUM_MOB_LEVEL": 14,
+      "LEVEL_FOR_MOBS_TO_BE_LEGENDARY": 20,
+      "SCALE_MOB_LEVEL_TO_NEAREST_PLAYER": true,
+      "DROPS_UNIQUE_ITEMS": true,
+      "MAP_TIER": 1,
+      "DROP_MULTIPLIER": 1.0,
+      "MOB_STRENGTH_MULTIPLIER": 1.0,
+      "MOB_HP_MULTIPLIER": 1.0,
+      "MOB_EXP_MULTIPLIER": 1.0
+    },
+    "minecraft:the_nether": {
+      "USE_SPECIFIC_LVL_1_POSITION": false,
+      "SPECIFIC_LVL_1_POSITION": {
+        "x": 0,
+        "z": 0,
+        "y": 0
+      },
+      "MOB_LEVEL_PER_DISTANCE": 150,
+      "MOB_LEVEL_ONE_AREA": 50,
+      "MAXIMUM_MOB_LEVEL": 26,
+      "MINIMUM_MOB_LEVEL": 18,
+      "LEVEL_FOR_MOBS_TO_BE_LEGENDARY": 20,
+      "SCALE_MOB_LEVEL_TO_NEAREST_PLAYER": true,
+      "DROPS_UNIQUE_ITEMS": true,
+      "MAP_TIER": 2,
+      "DROP_MULTIPLIER": 1.0,
+      "MOB_STRENGTH_MULTIPLIER": 1.0,
+      "MOB_HP_MULTIPLIER": 1.0,
+      "MOB_EXP_MULTIPLIER": 1.0
+    },
+    "minecraft:the_end": {
+      "USE_SPECIFIC_LVL_1_POSITION": false,
+      "SPECIFIC_LVL_1_POSITION": {
+        "x": 0,
+        "z": 0,
+        "y": 0
+      },
+      "MOB_LEVEL_PER_DISTANCE": 100,
+      "MOB_LEVEL_ONE_AREA": 50,
+      "MAXIMUM_MOB_LEVEL": 30,
+      "MINIMUM_MOB_LEVEL": 26,
+      "LEVEL_FOR_MOBS_TO_BE_LEGENDARY": 20,
+      "SCALE_MOB_LEVEL_TO_NEAREST_PLAYER": true,
+      "DROPS_UNIQUE_ITEMS": true,
+      "MAP_TIER": 2,
+      "DROP_MULTIPLIER": 1.0,
+      "MOB_STRENGTH_MULTIPLIER": 1.0,
+      "MOB_HP_MULTIPLIER": 1.0,
+      "MOB_EXP_MULTIPLIER": 1.0
+    },
+    "atum:atum": {
+      "USE_SPECIFIC_LVL_1_POSITION": false,
+      "SPECIFIC_LVL_1_POSITION": {
+        "x": 0,
+        "z": 0,
+        "y": 0
+      },
+      "MOB_LEVEL_PER_DISTANCE": 150,
+      "MOB_LEVEL_ONE_AREA": 50,
+      "MAXIMUM_MOB_LEVEL": 40,
+      "MINIMUM_MOB_LEVEL": 30,
+      "LEVEL_FOR_MOBS_TO_BE_LEGENDARY": 20,
+      "SCALE_MOB_LEVEL_TO_NEAREST_PLAYER": true,
+      "DROPS_UNIQUE_ITEMS": true,
+      "MAP_TIER": 2,
+      "DROP_MULTIPLIER": 1.0,
+      "MOB_STRENGTH_MULTIPLIER": 1.0,
+      "MOB_HP_MULTIPLIER": 1.0,
+      "MOB_EXP_MULTIPLIER": 1.0
+    },
+    "goodnightsleep:good_dream": {
+      "USE_SPECIFIC_LVL_1_POSITION": false,
+      "SPECIFIC_LVL_1_POSITION": {
+        "x": 0,
+        "z": 0,
+        "y": 0
+      },
+      "MOB_LEVEL_PER_DISTANCE": 150,
+      "MOB_LEVEL_ONE_AREA": 50,
+      "MAXIMUM_MOB_LEVEL": 45,
+      "MINIMUM_MOB_LEVEL": 40,
+      "LEVEL_FOR_MOBS_TO_BE_LEGENDARY": 20,
+      "SCALE_MOB_LEVEL_TO_NEAREST_PLAYER": true,
+      "DROPS_UNIQUE_ITEMS": true,
+      "MAP_TIER": 3,
+      "DROP_MULTIPLIER": 1.0,
+      "MOB_STRENGTH_MULTIPLIER": 1.0,
+      "MOB_HP_MULTIPLIER": 1.0,
+      "MOB_EXP_MULTIPLIER": 1.0
+    },
+    "goodnightsleep:nightmare": {
+      "USE_SPECIFIC_LVL_1_POSITION": false,
+      "SPECIFIC_LVL_1_POSITION": {
+        "x": 0,
+        "z": 0,
+        "y": 0
+      },
+      "MOB_LEVEL_PER_DISTANCE": 100,
+      "MOB_LEVEL_ONE_AREA": 50,
+      "MAXIMUM_MOB_LEVEL": 50,
+      "MINIMUM_MOB_LEVEL": 40,
+      "LEVEL_FOR_MOBS_TO_BE_LEGENDARY": 20,
+      "SCALE_MOB_LEVEL_TO_NEAREST_PLAYER": true,
+      "DROPS_UNIQUE_ITEMS": true,
+      "MAP_TIER": 3,
+      "DROP_MULTIPLIER": 1.0,
+      "MOB_STRENGTH_MULTIPLIER": 1.0,
+      "MOB_HP_MULTIPLIER": 1.0,
+      "MOB_EXP_MULTIPLIER": 1.0
+    },
+    "midnight:midnight": {
+      "USE_SPECIFIC_LVL_1_POSITION": false,
+      "SPECIFIC_LVL_1_POSITION": {
+        "x": 0,
+        "z": 0,
+        "y": 0
+      },
+      "MOB_LEVEL_PER_DISTANCE": 100,
+      "MOB_LEVEL_ONE_AREA": 50,
+      "MAXIMUM_MOB_LEVEL": 58,
+      "MINIMUM_MOB_LEVEL": 50,
+      "LEVEL_FOR_MOBS_TO_BE_LEGENDARY": 20,
+      "SCALE_MOB_LEVEL_TO_NEAREST_PLAYER": true,
+      "DROPS_UNIQUE_ITEMS": true,
+      "MAP_TIER": 3,
+      "DROP_MULTIPLIER": 1.0,
+      "MOB_STRENGTH_MULTIPLIER": 1.1,
+      "MOB_HP_MULTIPLIER": 1.0,
+      "MOB_EXP_MULTIPLIER": 1.0
+    },
+    "tropicraft:tropics": {
+      "USE_SPECIFIC_LVL_1_POSITION": false,
+      "SPECIFIC_LVL_1_POSITION": {
+        "x": 0,
+        "z": 0,
+        "y": 0
+      },
+      "MOB_LEVEL_PER_DISTANCE": 100,
+      "MOB_LEVEL_ONE_AREA": 50,
+      "MAXIMUM_MOB_LEVEL": 58,
+      "MINIMUM_MOB_LEVEL": 50,
+      "LEVEL_FOR_MOBS_TO_BE_LEGENDARY": 20,
+      "SCALE_MOB_LEVEL_TO_NEAREST_PLAYER": true,
+      "DROPS_UNIQUE_ITEMS": true,
+      "MAP_TIER": 3,
+      "DROP_MULTIPLIER": 1.0,
+      "MOB_STRENGTH_MULTIPLIER": 1.1,
+      "MOB_HP_MULTIPLIER": 1.0,
+      "MOB_EXP_MULTIPLIER": 1.0
+    },
+    "gaiadimension:gaia": {
+      "USE_SPECIFIC_LVL_1_POSITION": false,
+      "SPECIFIC_LVL_1_POSITION": {
+        "x": 0,
+        "z": 0,
+        "y": 0
+      },
+      "MOB_LEVEL_PER_DISTANCE": 100,
+      "MOB_LEVEL_ONE_AREA": 50,
+      "MAXIMUM_MOB_LEVEL": 74,
+      "MINIMUM_MOB_LEVEL": 58,
+      "LEVEL_FOR_MOBS_TO_BE_LEGENDARY": 20,
+      "SCALE_MOB_LEVEL_TO_NEAREST_PLAYER": true,
+      "DROPS_UNIQUE_ITEMS": true,
+      "MAP_TIER": 4,
+      "DROP_MULTIPLIER": 1.0,
+      "MOB_STRENGTH_MULTIPLIER": 1.0,
+      "MOB_HP_MULTIPLIER": 1.0,
+      "MOB_EXP_MULTIPLIER": 1.0
+    },
+    "mining_dimension:mining_world": {
+      "USE_SPECIFIC_LVL_1_POSITION": false,
+      "SPECIFIC_LVL_1_POSITION": {
+        "x": 0,
+        "z": 0,
+        "y": 0
+      },
+      "MOB_LEVEL_PER_DISTANCE": 100,
+      "MOB_LEVEL_ONE_AREA": 50,
+      "MAXIMUM_MOB_LEVEL": 50,
+      "MINIMUM_MOB_LEVEL": 30,
+      "LEVEL_FOR_MOBS_TO_BE_LEGENDARY": 20,
+      "SCALE_MOB_LEVEL_TO_NEAREST_PLAYER": true,
+      "DROPS_UNIQUE_ITEMS": false,
+      "MAP_TIER": 2,
+      "DROP_MULTIPLIER": 1.0,
+      "MOB_STRENGTH_MULTIPLIER": 1.2,
+      "MOB_HP_MULTIPLIER": 1.0,
+      "MOB_EXP_MULTIPLIER": 1.0
+    },
+    "dimdungeons:dungeon_dimension": {
+      "USE_SPECIFIC_LVL_1_POSITION": false,
+      "SPECIFIC_LVL_1_POSITION": {
+        "x": 0,
+        "z": 0,
+        "y": 0
+      },
+      "MOB_LEVEL_PER_DISTANCE": 100,
+      "MOB_LEVEL_ONE_AREA": 50,
+      "MAXIMUM_MOB_LEVEL": 120,
+      "MINIMUM_MOB_LEVEL": 60,
+      "LEVEL_FOR_MOBS_TO_BE_LEGENDARY": 20,
+      "SCALE_MOB_LEVEL_TO_NEAREST_PLAYER": true,
+      "DROPS_UNIQUE_ITEMS": true,
+      "MAP_TIER": 5,
+      "DROP_MULTIPLIER": 8.0,
+      "MOB_STRENGTH_MULTIPLIER": 2.0,
+      "MOB_HP_MULTIPLIER": 2.0,
+      "MOB_EXP_MULTIPLIER": 4.0
+    }
+  }
+}

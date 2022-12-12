@@ -1,0 +1,40 @@
+{
+  "groups": [],
+  "initial": {
+    "members": [],
+    "name": "default",
+    "prefix": "",
+    "suffix": "",
+    "all": false,
+    "all_non_op": true,
+    "allowedCommands": [
+      "command.team"
+    ],
+    "bannedCommands": [
+      "command.ftbquests",
+      "command.bo",
+      "command.crafttweaker",
+      "command.ie",
+      "command.create",
+      "command.lm",
+      "command.me",
+      "command.uteamcore",
+      "command.structurize",
+      "command.trigger",
+      "command.performant",
+      "command.ct",
+      "command.kiwi",
+      "command.config"
+    ]
+  },
+  "mods": {
+    "members": [],
+    "name": "mods",
+    "prefix": "",
+    "suffix": "",
+    "all": true,
+    "all_non_op": true,
+    "allowedCommands": [],
+    "bannedCommands": []
+  }
+}
